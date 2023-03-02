@@ -7,6 +7,7 @@ export class Payment {
     description: 'The client side transaction id',
     required: false,
   })
+
   @IsString()
   @IsOptional()
   externalTransactionId: string;
@@ -30,6 +31,7 @@ export class Payment {
     required: false,
     default: 'MGA',
   })
+
   @IsString()
   @IsOptional()
   currency: string; // Ar
@@ -38,6 +40,7 @@ export class Payment {
     description: 'Identifier of debitor',
     example: '0343500003',
   })
+
   @IsString()
   @IsOptional()
   from: string;
@@ -46,6 +49,7 @@ export class Payment {
     description: 'Identifier of creditor',
     example: '0343500004',
   })
+  
   @IsString()
   @IsOptional()
   to: string;
